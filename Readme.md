@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Елизавета Андрюхина](https://up.htmlacademy.ru/htmlcss/39/user/2303487).
-* Наставник: `Анна Лисененкова`(https://htmlacademy.ru/profile/ankhena).
-
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Ссылка на проект: [Проект Седона](https://github.com/and-lizaveta/2303487-sedona-39).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
