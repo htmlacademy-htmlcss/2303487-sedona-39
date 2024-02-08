@@ -8,20 +8,20 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="sedona-logo-link"><img class="navigation-logo" src="images/icons/sedona-logo.svg"
+        <a class="sedona-logo-link" href="index.html" aria-current="page"><img class="navigation-logo" src="images/icons/sedona-logo.svg"
           width="140" height="70" alt="Логотип сайта о Седоне."></a>
         <ul class="main-menu">
           <li class="navigation-item"><a href="index.html">Главная</a></li>
   <li class="navigation-item"><a href="#">О Седоне</a></li>
-  <li class="navigation-item navigation-item-current"><a href="catalog.html">Гостиницы</a></li>
+  <li class="navigation-item navigation-item-current"><a href="catalog.html" aria-current="page">Гостиницы</a></li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item"><button class="navigation-link-search" type="submit"><span
-                class="visually-hidden">Поиск.</span></button></li>
+                class="visually-hidden">Поиск</span></button></li>
           <li class="navigation-item favorites-count">
-            <span class="favorites-count-icon">12</span>
+            <span class="visually-hidden">Избранное</span>
             <a class="navigation-link-heart" href="#">
-              <span class="visually-hidden">Избранное.</span>
+              <span class="favorites-count-icon">12</span>
             </a>
           </li>
           <li class="navigation-item navigation-item-button"><a class="button button-link" href="#">Хочу сюда!</a>
@@ -31,17 +31,16 @@
     </header>
     <main class="main-catalog">
       <section class="catalog-filter-form">
-        <h1 class="catalog-filter-title">Гостиницы Седоны</h1>
-        <nav class="breadcrumbs">
+        <h1 class="catalog-filter-title">Фильтр гостиниц Седоны</h1>
           <ol class="breadcrumbs-list">
             <li class="breadcrumbs-item breadcrumbs-item-home">
-              <button class="breadcrumbs-link breadcrumbs-link-home" type="button"><span
-                  class="visually-hidden">Главная.</span></button>
+              <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html"><span
+                  class="visually-hidden">Главная</span></a>
             </li>
-            <li class="breadcrumbs-item breadcrumbs-item-text">Гостиницы
+            <li class="breadcrumbs-item breadcrumbs-item-text"> <a class="breadcrumbs-link breadcrumbs-link-home" href="catalog.html" aria-current="page"><span
+              class="visually-hidden">Гостиницы</span></a>
             </li>
           </ol>
-        </nav>
     <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="filter">
         <legend class="hotel-search-form-title">Инфраструктура:</legend>
@@ -66,52 +65,52 @@
     </form>
     </section>
   <section class="hotels-list">
-    <h2 class="filter-select-title">Найдено гостиниц: 38</h2>
+    <h2 class="filter-select-title">Найдено гостиниц: <span>38</span></h2>
     <span class="sorting">Сначала дешевые</span>
-    <ul class="how-to-view-cards">
-      <li class="view-card">Табличка</li>
-      <li class="view-card">Десктоп</li>
-      <li class="view-card">Список</li>
+    <ul class="how-to-view">
+      <li class="view-card"><a class="page-view page-view-current" href="#">Табличка</a></li>
+      <li class="view-card"><a class="page-view" href="#">Десктоп</a></li>
+      <li class="view-card"><a class="page-view" href="#">Список</a></li>
     </ul>
     <ul class="hotels-search-results">
       <li class="hotel-card">
-        <h3 class="hotel-header">Amara Resort & Spa</h3>
-        <a class="hotel-link" href="#"><img class="hotel-view" src="images/catalog/amara-resort.jpg" width="300" height="212" alt="Вид гостиницы Amara Resort & Spa"></a>
+        <a class="hotel-header-link" href="#" tabindex="-1"><h3 class="hotel-name">Amara Resort & Spa</h3></a>
+        <a class="hotel-link" href="#" tabindex="-1"><img class="hotel-view" src="images/catalog/amara-resort.jpg" width="300" height="212" alt="Вид гостиницы Amara Resort & Spa"></a>
       <p class="hotel-desctiption">Гостиница</p>
       <p class="hotel-desctiption">От 4000 ₽</p>
       <a class="button button-more-info">Подробнее</a>
       <button class="button button-add-to-favorites" type="submit">В избранное</button>
-    <span class="rating-stars">4 звезды</span>
+    <p class="stars rating-four-stars"><span class="visually-hidden">Отель 4 звезды</span></p>
     <span class="button button-rating">Рейтинг: 8,5</span>
     </li>
     <li class="hotel-card">
-      <h3 class="hotel-header">Villas at Poco Diablo</h3>
-      <a class="hotel-link" href="#"><img class="hotel-view" src="images/catalog/villas-at-poco.jpg" width="300" height="212" alt="Вид гостиницы Amara Resort & Spa"></a>
+      <a class="hotel-header-link" href="#" tabindex="-1"><h3 class="hotel-name">Villas at Poco Diablo</h3></a>
+      <a class="hotel-link" href="#" tabindex="-1"><img class="hotel-view" src="images/catalog/villas-at-poco.jpg" width="300" height="212" alt="Вид гостиницы Amara Resort & Spa"></a>
     <p class="hotel-desctiption">Гостиница</p>
     <p class="hotel-desctiption">От 5000 ₽</p>
     <a class="button button-more-info">Подробнее</a>
     <button class="button button-added-to-favorites" type="submit">В избранном</button>
-  <span class="rating-stars">3 звезды</span>
+    <p class="stars rating-three-stars"><span class="visually-hidden">Отель 3 звезды</span></p>
   <span class="button button-rating">Рейтинг: 9,2</span>
   </li>
   <li class="hotel-card">
-    <h3 class="hotel-header">Desert Quail Inn</h3>
-    <a class="hotel-link" href="#"><img class="hotel-view" src="images/catalog/desert-quail.jpg" width="300" height="212" alt="Вид гостиницы Amara Resort & Spa"></a>
+    <a class="hotel-header-link" href="#" tabindex="-1"><h3 class="hotel-name">Desert Quail Inn</h3></a>
+    <a class="hotel-link" href="#" tabindex="-1"><img class="hotel-view" src="images/catalog/desert-quail.jpg" width="300" height="212" alt="Вид гостиницы Amara Resort & Spa"></a>
   <p class="hotel-desctiption">Гостиница</p>
   <p class="hotel-desctiption">От 2500 ₽</p>
   <a class="button button-more-info">Подробнее</a>
   <button class="button button-add-to-favorites" type="submit">В избранное</button>
-<span class="rating-stars">4 звезды</span>
+  <p class="stars rating-four-stars"><span class="visually-hidden">Отель 4 звезды</span></p>
 <span class="button button-rating">Рейтинг: 6,9</span>
 </li>
 <li class="hotel-card">
-  <h3 class="hotel-header">GreenTree Inn</h3>
-  <a class="hotel-link" href="#"><img class="hotel-view" src="images/catalog/greentree.jpg" width="300" height="212" alt="Вид гостиницы Amara Resort & Spa"></a>
+  <a class="hotel-header-link" href="#" tabindex="-1"><h3 class="hotel-name">GreenTree Inn</h3></a>
+  <a class="hotel-link" href="#" tabindex="-1"><img class="hotel-view" src="images/catalog/greentree.jpg" width="300" height="212" alt="Вид гостиницы Amara Resort & Spa"></a>
 <p class="hotel-desctiption">Гостиница</p>
 <p class="hotel-desctiption">От 1500 ₽</p>
 <a class="button button-more-info">Подробнее</a>
 <button class="button button-add-to-favorites" type="submit">В избранное</button>
-<span class="rating-stars">2 звезды</span>
+<p class="stars rating-two-stars"><span class="visually-hidden">Отель 2 звезды</span></p>
 <span class="button button-rating">Рейтинг: 5,0</span>
 </li>
     </ul>
@@ -135,7 +134,7 @@
         <a class="pagination-link" href="#">4</a>
       </li>
       <li class="pagination-item">
-        <a class="pagination-link pagination-link-disabled" href="#">...</a>
+        <span class="pagination-more">...</span>
       </li>
     </ul>
   <article class="subscribe-form subscribe-form-background">
