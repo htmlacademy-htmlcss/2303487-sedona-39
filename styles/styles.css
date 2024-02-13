@@ -75,6 +75,16 @@ line-height: 36px;
 line-height: 23px;
 }
 
+.hero,
+.hello,
+.sedona-advantages,
+.sedona-recommendations,
+.welcome,
+.hotel-search,
+.subscribe-form {
+  text-align: center;
+}
+
 /*Стилизация фона*/
 
 .hero {
