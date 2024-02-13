@@ -81,18 +81,27 @@ line-height: 23px;
   background-image: url(../images/sedona-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
 }
 
 .subscribe-form-background {
+  background-color: #000000;
   background-image: url(../images/subscribe-background.jpg);
 background-repeat: no-repeat;
 background-size: 100% auto;
+background-position: center;
+background-attachment: fixed;
 }
 
 .catalog-filter-form {
+  background-color: #000000;
   background-image: url(../images/filter-form-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .advantages-item-with-picture,
