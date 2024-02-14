@@ -16,11 +16,15 @@
   font-display: swap;
 }
 
-img {
-  display: block;
-}
 
-ul {
+.main-menu,
+.navigation-list,
+.how-to-view,
+.hotels-search-results,
+.pagination,
+.socials,
+.advantages-list,
+.recommendations-list {
   list-style-type: none;
 }
 
