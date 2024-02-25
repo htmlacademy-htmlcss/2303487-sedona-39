@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Седона</title>
+    <title>Седона: Главная страница</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="wrapper">
     <header class="main-header">
+      <nav class="navigation">
       <a class="sedona-logo-link" href="index.html" aria-current="page"><img class="navigation-logo" src="images/icons/sedona-logo.svg"
         width="140" height="70" alt="Логотип сайта о Седоне"></a>
-      <nav class="main-navigation">
-        <ul class="main-menu">
-          <li class="navigation-item navigation-item-current"><a href="#" aria-current="page">Главная</a></li>
-  <li class="navigation-item"><a href="#">О Седоне</a></li>
-  <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+        <ul class="navigation-list">
+          <li class="navigation-item navigation-item-current"><a class="navigation-link" href="#" aria-current="page">Главная</a></li>
+  <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
+  <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item"><button class="navigation-link-search" type="submit"><span
@@ -43,8 +44,9 @@
     <h2 class="visually-hidden">Преимущества Седоны</h2>
     <ul class="advantages-list">
       <li class="advantages-item advantages-item-with-picture">
-        <h3 class="advantages-title">Настоящий<br>городок</h3>
-      <p class="text-description-white">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
+        <div class="item-with-picture-text">
+          <h3 class="advantages-title">Настоящий<br>городок</h3>
+      <p class="text-description-white">Седона - не аттракцион для<br>туристов, там течёт своя<br>жизнь</p></div>
       <img class="advantages-picture" src="images/houses.jpg" width="800" height="385" alt="Вид города Седона"></li>
       <li class="advantages-item advantages-item-square"><h3 class="advantages-title">Небольшая<br>площадь</h3>
         <p class="text-description">Все достопримечательности<br>находятся очень близко</p></li>
@@ -52,8 +54,11 @@
           <p class="text-description">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p></li>
           <li class="advantages-item advantages-item-tourists"><h3 class="advantages-title">Мало<br>туристов</h3>
             <p class="text-description">Большинство едет в Гранд<br>Каньон и толпится там</p></li>
-            <li class="advantages-item advantages-item-with-picture-reversed"><img class="advantages-picture-reversed" src="images/devils-bridge.jpg" width="800" height="385" alt="Мост дьявола"><h3 class="advantages-title">Там есть<br>мост дьявола</h3>
-              <p class="text-description-white">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p></li>
+            <li class="advantages-item advantages-item-with-picture-reversed"><img class="advantages-picture" src="images/devils-bridge.jpg" width="800" height="385" alt="Мост дьявола">
+              <div class="item-with-picture-text">
+              <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
+              <p class="text-description-white">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p></div>
+            </li>
     </ul>
   </section>
   <article class="welcome">
@@ -86,10 +91,10 @@
   <a class="button button-hotel-search" href="catalog.html">Поиск гостиницы в Седоне</a>
 </article>
 <article class="subscribe-form subscribe-form-background">
-  <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+  <h3 class="title subscribe-title">Подпишитесь на рассылку</h3>
   <p class="subscribe-form-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
   <form class="send-email" action="https://echo.htmlacademy.ru/" method="post">
-    <input type="email" placeholder="E-mail">
+    <input type="email" placeholder="Ваш E-mail">
     <button class="button button-subscribe" type="submit">Подписаться</button>
   </form>
 </article>
@@ -105,5 +110,6 @@
         <a class="socials-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="socials-logo-link" href="https://htmlacademy.ru/"><img class="socials-logo" src="images/icons/htmlacademy_logo.svg" alt="Логотип HTML Academy"></a>
 </footer>
+</div>
   </body>
 </html>

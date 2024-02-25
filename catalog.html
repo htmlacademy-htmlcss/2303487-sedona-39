@@ -3,36 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Каталог гостиниц Седоны</title>
+    <title>Каталог гостиниц Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
+    <div class="wrapper">
+      <header class="main-header">
+        <nav class="navigation">
         <a class="sedona-logo-link" href="index.html" aria-current="page"><img class="navigation-logo" src="images/icons/sedona-logo.svg"
-          width="140" height="70" alt="Логотип сайта о Седоне."></a>
-        <ul class="main-menu">
-          <li class="navigation-item"><a href="index.html">Главная</a></li>
-  <li class="navigation-item"><a href="#">О Седоне</a></li>
-  <li class="navigation-item navigation-item-current"><a href="catalog.html" aria-current="page">Гостиницы</a></li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item"><button class="navigation-link-search" type="submit"><span
-                class="visually-hidden">Поиск</span></button></li>
-          <li class="navigation-item favorites-count">
-            <span class="visually-hidden">Избранное</span>
-            <a class="navigation-link-heart" href="#">
-              <span class="favorites-count-icon">12</span>
-            </a>
-          </li>
-          <li class="navigation-item navigation-item-button"><a class="button button-link" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+          width="140" height="70" alt="Логотип сайта о Седоне"></a>
+          <ul class="navigation-list">
+            <li class="navigation-item"><a class="navigation-link" href="#" aria-current="page">Главная</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
+    <li class="navigation-item  navigation-item-current"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item"><button class="navigation-link-search" type="submit"><span
+                  class="visually-hidden">Поиск</span></button></li>
+            <li class="navigation-item favorites-count">
+              <span class="visually-hidden">Избранное</span>
+              <a class="navigation-link-heart" href="#">
+                <span class="favorites-count-icon">12</span>
+              </a>
+            </li>
+            <li class="navigation-item navigation-item-button"><a class="button button-link" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
     <main class="main-catalog">
       <section class="catalog-filter-form">
-        <h1 class="catalog-filter-title">Фильтр гостиниц Седоны</h1>
+        <h1 class="catalog-filter-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs-list">
             <li class="breadcrumbs-item breadcrumbs-item-home">
               <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html"><span
@@ -67,7 +69,8 @@
     </section>
   <section class="hotels-list">
     <h2 class="filter-select-title">Найдено гостиниц: <span>38</span></h2>
-    <span class="sorting">Сначала дешевые</span>
+    <select class="select-control" aria-label="Сортировка"><option value='cheap'>Сначала дешевые</option>
+      <option value='expensive'>Сначала дорогие</option></select>
     <ul class="how-to-view">
       <li class="view-card"><a class="page-view page-view-current" href="#">Табличка</a></li>
       <li class="view-card"><a class="page-view" href="#">Десктоп</a></li>
@@ -118,10 +121,6 @@
   </section>
     <ul class="pagination">
       <li class="pagination-item">
-        <a class="pagination-link pagination-prev pagination-disabled">
-        </a>
-      </li>
-      <li class="pagination-item">
         <a class="pagination-link pagination-current">1</a>
       </li>
       <li class="pagination-item">
@@ -140,8 +139,8 @@
         <a class="pagination-link" href="#">10</a>
       </li>
     </ul>
-  <article class="subscribe-form">
-    <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+  <article class="subscribe-form-catalog">
+    <h3 class="title subscribe-title">Подпишитесь на рассылку</h3>
     <p class="subscribe-form-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
     <form class="send-email" action="https://echo.htmlacademy.ru/" method="post">
       <input type="email" placeholder="E-mail">
@@ -160,5 +159,6 @@
             <a class="socials-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <a class="socials-logo-link" href="https://htmlacademy.ru/"><img class="socials-logo" src="images/icons/htmlacademy_logo.svg" alt="Логотип HTML Academy"></a>
     </footer>
+    </div>
   </body>
 </html>
