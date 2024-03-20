@@ -425,6 +425,7 @@ margin: 0;}
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
+flex-wrap: wrap;
 -webkit-box-orient: horizontal;
 -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -432,30 +433,34 @@ display: flex;
 width: 1200px;
 color: #ffffff;
 background-color: #82b3d3;
+
 }
 
 .advantages-item-with-picture-reversed {
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
+flex-wrap: wrap;
 width: 1200px;
 color: #ffffff;
 background-color: #82b3d3;
+
 }
 
 .item-with-picture-text {
-width: 400px;
+min-width: 400px;
 min-height: 385px;
 }
 
-.advantages-picture {  width: 800px;
+.advantages-picture {
+  width: 800px;
 display: block;
 height: 385px;}
 
 .advantages-item-road,
 .advantages-item-tourists,
 .advantages-item-square {
-  width: 400px;
+min-width: 400px;
 min-height: 385px;}
 
 .advantages-item-square,
@@ -502,7 +507,7 @@ min-height: 385px;}
 }
 
   .recommendations-item {
-     width: 400px;
+  min-width: 400px;
   min-height: 385px;
   position: relative;
 }
